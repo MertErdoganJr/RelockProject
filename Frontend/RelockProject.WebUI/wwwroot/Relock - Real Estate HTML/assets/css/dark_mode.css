@@ -1,0 +1,118 @@
+body,
+ .testimonial,
+ .header_top .contact_information {
+	background-color: #0c0c0c;
+}
+
+ .site_header,
+ .fixed-header,
+ .bg_img_buyer_seller,
+ .bg_img_testimonial,
+ .agent .agent_detail:after,
+ .estimate_inner_section,
+ #realock_info,
+ #image_slider_section {
+	background-color: #000000;
+}
+
+ h2,
+ h3,
+ .search_form_for_about_slider .placeholder_about_slider_section .form_placeholder:focus,
+ .header_top .contact_information,
+ .navbar-expand-lg .navbar-nav .nav-link,
+ .navbar-light .navbar-toggler,
+ .navbar-expand-lg .offcanvas-header .btn-close,
+ .mobile_sub_menu .sub-item .nav-link:hover,
+ .property .facilities span,
+ .agent .background .agent_description .agent-title:hover,
+ .newsletter_form .form_container input:focus,
+ .info_heading h1, 
+ .para_info p span,
+ .client_name h4,
+ .search_form_realock .city_icon .svg_icon,
+ .search_form_realock .filter_icon .svg_icon svg,
+ .homepage_2_dark_mode_search .search_form_realock .realock_form_placeholder .form_placeholder:focus,
+ .site_header .site_logo,
+ .agent .background .agent_description .agent-title:hover,
+ .search_form_realock .realock_form_placeholder .form_placeholder:focus {
+	color: #ffffff;
+}
+
+ .navbar-expand-lg .navbar-nav .dropdown-menu .nav-link,
+ .search_form_for_about_slider .placeholder_about_slider_section .form_placeholder:focus,
+ .newsletter_form .form_container input:focus {
+	color: #000000;
+}
+
+.heading_for_about_slider h2,
+ .navbar-expand-lg .navbar-nav .dropdown-menu .nav-link:hover {
+	color: #1d44f9;
+}
+
+ .testimonial_icon svg {
+	color: #909090;
+}
+
+ .buyer_seller_para p {
+	color: #888888;
+}
+
+ .header_top .contact_information {
+	border: 1px solid #0c0c0c;
+}
+
+ .navbar-light .navbar-toggler,
+ .search_form_realock .filter_icon .svg_icon {
+	border: 2px solid #242424;
+}
+
+ .bg_img_buyer_seller,
+ .bg_img_testimonial {
+	background-image: url(../images/house-images/dark-bg-house.png);
+}
+
+ .estimate_inner_section:before {
+	background-image: url(../images/background-shape/dark-bg-shape-2.png);
+}
+
+ .estimate_inner_section:after {
+	background-image: url(../images/background-shape/dark-bg-shape-3.png);
+}
+
+ .image_slider:before {
+	background-image: url(../images/background-shape/dark-bg-shape-2.png);
+}
+
+ .image_slider:after {
+	background-image: url(../images/background-shape/dark-bg-shape-3.png);
+}
+
+ .fixed-header {
+	box-shadow: 0px 1px 5px #2a2a2a;
+	-webkit-box-shadow: 0px 1px 5px #2a2a2a;
+    -moz-box-shadow: 0px 1px 5px #2a2a2a;
+    -ms-box-shadow: 0px 1px 5px #2a2a2a;
+    -o-box-shadow: 0px 1px 5px #2a2a2a;
+}
+
+ .agent .agent_detail:hover::after {
+	box-shadow: 5px 5px 7px #2c2c2c;
+	-webkit-box-shadow: 5px 5px 7px #2c2c2c;
+    -moz-box-shadow: 5px 5px 7px #2c2c2c;
+    -ms-box-shadow: 5px 5px 7px #2c2c2c;
+    -o-box-shadow: 5px 5px 7px #2c2c2c;
+}
+
+ .search_form_realock {
+	background-color: #0c0c0c;
+	box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+	-webkit-box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+    -moz-box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+    -ms-box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+    -o-box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+}
+
+ .search_form_realock .realock_form_placeholder .form_placeholder{
+	color: #ffffff;
+	background-color: #0c0c0c;
+}
