@@ -1,21 +1,16 @@
-﻿@model List<AgentViewModel>
+﻿@model List<TestimonialViewModel>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
-
 <div class="container-fluid">
 
     <div class="row">
         <div class="col">
             <div class="card">
-                @*<button type="button" a href="/Agent/AddAgent/" class="btn mb-1 btn-info btn-lg">
-                    Yeni Personel Ekle <span class="btn-icon-right"><i class="fa fa-users"></i></span>
-                </button>*@
-
-                <a href="/Agent/AddAgent/" class="btn mb-1 btn-info btn-lg" >Yeni Personel Ekle</a>
+                <a href="/Testimonial/AddTestimonial/" class="btn mb-1 btn-info btn-lg">Yeni Personel Ekle</a>
             </div>
         </div>
     </div>
@@ -27,14 +22,14 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center">
-                            <img alt="" class="rounded-circle mt-4" src="@item.AgentImage">
+                            @*<img alt="" class="rounded-circle mt-4" src="@item.AgentImage">*@
                             <h4 class="card-widget__title text-dark mt-3">@item.Name</h4>
                             <p class="text-muted">@item.Title</p>
-                            <div class="col-lg-12">
+                            @*<div class="col-lg-12">
                                 <a class="btn mb-1 btn-primary" href="/Agent/UpdateAgent/@item.AgentID">Güncelle</a>
                                 <a class="btn mb-1 btn-info" href="javascript:void()">Detaylar</a>
                                 <a class="btn mb-1 btn-danger" href="/Agent/DeleteAgent/@item.AgentID">Sil</a>
-                            </div>
+                            </div>*@
                         </div>
                     </div>
                 </div>

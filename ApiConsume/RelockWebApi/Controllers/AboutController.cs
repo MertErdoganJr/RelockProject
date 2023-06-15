@@ -30,7 +30,7 @@ namespace RelockWebApi.Controllers
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteAbout(int id)
         {
             var values = _aboutService.TGetById(id);

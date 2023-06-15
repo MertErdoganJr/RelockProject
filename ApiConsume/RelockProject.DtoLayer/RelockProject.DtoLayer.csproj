@@ -21,4 +21,9 @@
     <ProjectReference Include="..\RelockProject.EntityLayer\RelockProject.EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\AgentDto\" />
+    <Folder Include="Dtos\SubscribeDto\" />
+  </ItemGroup>
+
 </Project>

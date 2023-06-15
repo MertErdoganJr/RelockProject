@@ -1,0 +1,21 @@
+﻿using AutoMapper;
+using RelockProject.EntityLayer.Concrete;
+using RelockProject.WebUI.Dtos.AboutDto;
+using RelockProject.WebUI.Dtos.LoginDto;
+using RelockProject.WebUI.Dtos.RegisterDto;
+
+namespace RelockProject.WebUI.Mapping
+{
+    public class AutoMapperConfig : Profile
+    {
+        public AutoMapperConfig()
+        {
+            CreateMap<ResultAboutDto, About>().ReverseMap();
+            CreateMap<UpdateAboutDto, About>().ReverseMap();
+            CreateMap<CreateAboutDto, About>().ReverseMap();
+
+            CreateMap<CreateNewUserDto, AppUser>().ReverseMap();
+            CreateMap<LoginUserDto, AppUser>().ReverseMap();
+        }
+    }
+}

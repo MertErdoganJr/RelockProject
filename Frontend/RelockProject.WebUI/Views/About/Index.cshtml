@@ -1,0 +1,32 @@
+﻿@model List<ResultAboutDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık 1</th>
+        <th>Başlık 2</th>
+        <th>Açıklama</th>
+        <th>Görsel Yolu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach(var item in Model){
+        <tr>
+            <td>@item.AboutID</td>
+            <td>@item.Title1</td>
+            <td>@item.Title2</td>
+            <td>@item.Description</td>
+            <td>@item.AboutImage</td>
+            <td><a href="/About/DeleteAbout/@item.AboutID" class="btn btn-warning">Sil</a></td>
+            <td><a href="/About/UpdateAbout/@item.AboutID" class="btn btn-info">Güncelle</a></td>
+
+        </tr>
+    }
+</table>
+<a href="/About/AddAbout/" class="btn mb-1 btn-info">Yeni Hizmet Girişi</a>
+

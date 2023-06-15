@@ -46,6 +46,8 @@ namespace RelockWebApi
             services.AddScoped<ISubscribeDal, EfSubscribeDal>();
             services.AddScoped<ISubscribeService, SubscribeManager>();
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("RelockApiCors", opts =>

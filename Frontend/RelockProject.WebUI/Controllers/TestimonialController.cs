@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RelockProject.WebUI.Models.Agent;
+using RelockProject.WebUI.Models.Testimonial;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace RelockProject.WebUI.Controllers
 {
-    public class AgentController : Controller
+    public class TestimonialController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public AgentController(IHttpClientFactory httpClientFactory)
+        public TestimonialController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -21,29 +21,29 @@ namespace RelockProject.WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:12589/api/Agent");
+            var responseMessage = await client.GetAsync("http://localhost:12589/api/Testimonial");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<AgentViewModel>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<TestimonialViewModel>>(jsonData);
                 return View(values);
             }
             return View();
         }
 
         [HttpGet]
-        public IActionResult AddAgent()
+        public IActionResult AddTestimonial()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAgent(AddAgentViewModel model)
+        public async Task<IActionResult> AddTestimonial(TestimonialViewModel model)
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(model);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("http://localhost:12589/api/Agent", stringContent);
+            var responseMessage = await client.PostAsync("http://localhost:12589/api/Testimonial", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -52,10 +52,10 @@ namespace RelockProject.WebUI.Controllers
         }
 
 
-        public async Task<IActionResult> DeleteAgent(int id)
+        public async Task<IActionResult> DeleteTestimonial(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:12589/api/Agent/{id}");
+            var responseMessage = await client.DeleteAsync($"http://localhost:12589/api/Testimonial/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -64,10 +64,10 @@ namespace RelockProject.WebUI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> UpdateAgent(int id)
+        public async Task<IActionResult> UpdateTestimonial(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:12589/api/Agent/{id}");
+            var responseMessage = await client.GetAsync($"http://localhost:12589/api/Testimonial/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -78,12 +78,12 @@ namespace RelockProject.WebUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateAgent(UpdateAgentViewModel model)
+        public async Task<IActionResult> UpdateTestimonial(UpdateAgentViewModel model)
         {
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(model);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("http://localhost:12589/api/Agent/", stringContent);
+            var responseMessage = await client.PutAsync("http://localhost:12589/api/Testimonial/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");

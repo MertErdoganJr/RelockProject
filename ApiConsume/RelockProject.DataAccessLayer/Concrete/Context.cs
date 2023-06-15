@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RelockProject.EntityLayer.Concrete;
 using System;
@@ -10,7 +11,7 @@ using Product = RelockProject.EntityLayer.Concrete.Product;
 
 namespace RelockProject.DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
