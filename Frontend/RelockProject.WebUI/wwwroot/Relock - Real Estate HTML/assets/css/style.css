@@ -252,11 +252,12 @@ li {
 }
 
 .about_slider .slide_1 {
-    background-image: url(../images/slider-images/slider-bg-1.png);
+    background-image: url(assets/images/slider-images/banner1.jpg);
 }
 
 .about_slider .slide_2 {
     background-image: url(../images/slider-images/slider-bg-2.png);
+  
 }
 
 .about_slider .slide_3 {
@@ -973,7 +974,8 @@ li {
 /************* About Section ****************/
 
 .bg_img_about {
-    background-image: url(../images/about-images/bg-about.png);
+    /*background-image: url("/Relock - Real Estate HTML/assets/images/about-images/g4.jpg");*/
+    background-image: url("~/Relock - Real Estate HTML/assets/images/about-images/g4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

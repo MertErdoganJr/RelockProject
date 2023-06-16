@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+
+    <div id="wrap">
+
+        <!-- Header starts -->
+        @await Component.InvokeAsync("_NavbarPartial")
+
+        @await Component.InvokeAsync("_HeadTitlePartial")
+
+        @await Component.InvokeAsync("_SearchPartial")
+
+        @await Component.InvokeAsync("_PropertyListPartial")
+
+        @await Component.InvokeAsync("_BuyerSellerPartial")
+
+        @await Component.InvokeAsync("_CategoryPartial")
+
+        @await Component.InvokeAsync("_TestimonialPartial")
+
+        @await Component.InvokeAsync("_AgentPartial")
+
+        @await Component.InvokeAsync("_FooterPartial")
+
+    </div>
+
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>
