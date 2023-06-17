@@ -1,4 +1,7 @@
-﻿<section id="property_listing_section" class="mt-100">
+﻿@model List<ResultProductDto>
+
+
+<section id="property_listing_section" class="mt-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-md-8 col-12">
@@ -14,96 +17,26 @@
             </div>
         </div>
 
+
         <div id="property-listings" class="pt-80">
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-1.png"
+            @foreach (var item in Model)
+            {
+                <div class="property">
+                    <div class="property-image">
+                        <img src="@item.Image"
                          alt="property_image">
-                    <p class="property-price">$800k</p>
+                        <p class="property-price">$@item.Price</p>
+                    </div>
+                    <h3 class="property-title">@item.Title</h3>
+                    <p class="property-address">@item.Address</p>
+                    <div class="facilities">
+                        <p class="bedroom-facility value">Bedroom: <span>@item.Bedroom</span></p>
+                        <p class="bathroom-facility value">Bathroom: <span>@item.Bathroom</span></p>
+                        <p class="area-facility value">Area: <span>@item.Area Sft.</span></p>
+                    </div>
                 </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
-
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-2.png"
-                         alt="property_image">
-                    <p class="property-price">$1.3m</p>
-                </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
-
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-3.png"
-                         alt="property_image">
-                    <p class="property-price">$650k</p>
-                </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
-
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-1.png"
-                         alt="property_image">
-                    <p class="property-price">$800k</p>
-                </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
-
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-2.png"
-                         alt="property_image">
-                    <p class="property-price">$1.3m</p>
-                </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
-
-            <div class="property">
-                <div class="property-image">
-                    <img src="~/Relock - Real Estate HTML/assets/images/property-listing/property-3.png"
-                         alt="property_image">
-                    <p class="property-price">$650k</p>
-                </div>
-                <h3 class="property-title">the mysterious mansion</h3>
-                <p class="property-address">228 Park Ave S, NY, 10003-1502, USA</p>
-                <div class="facilities">
-                    <p class="bedroom-facility value">Bedroom: <span>3</span></p>
-                    <p class="bathroom-facility value">Bathroom: <span>5</span></p>
-                    <p class="area-facility value">Area: <span>1230 Sft.</span></p>
-                </div>
-            </div>
+            }
         </div>
+
     </div>
 </section>

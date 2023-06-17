@@ -8,28 +8,29 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col">
+       @* <div class="col">
             <div class="card">
                 <a href="/Testimonial/AddTestimonial/" class="btn mb-1 btn-info btn-lg">Yeni Personel Ekle</a>
             </div>
-        </div>
+        </div>*@
     </div>
 
     <div class="row">
         @foreach (var item in Model)
         {
-            <div class="col">
+
+            <div class="col-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center">
-                            @*<img alt="" class="rounded-circle mt-4" src="@item.AgentImage">*@
                             <h4 class="card-widget__title text-dark mt-3">@item.Name</h4>
                             <p class="text-muted">@item.Title</p>
-                            @*<div class="col-lg-12">
-                                <a class="btn mb-1 btn-primary" href="/Agent/UpdateAgent/@item.AgentID">Güncelle</a>
-                                <a class="btn mb-1 btn-info" href="javascript:void()">Detaylar</a>
-                                <a class="btn mb-1 btn-danger" href="/Agent/DeleteAgent/@item.AgentID">Sil</a>
-                            </div>*@
+                            <br>
+                            <p class="text-muted">@item.Description</p>
+                            <div class="col-lg-12">
+                                <a class="btn mb-1 btn-primary" href="#">Onayla</a>
+                                <a class="btn mb-1 btn-danger" href="#">Sil</a>
+                            </div>
                         </div>
                     </div>
                 </div>

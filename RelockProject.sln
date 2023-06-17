@@ -7,17 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiConsume", "ApiConsume", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{785AF264-AC0D-40FE-9358-47076A0961CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockWebApi", "ApiConsume\RelockWebApi\RelockWebApi.csproj", "{729ECF4D-662E-4AA7-8982-35F10D09D8D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockWebApi", "ApiConsume\RelockWebApi\RelockWebApi.csproj", "{729ECF4D-662E-4AA7-8982-35F10D09D8D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockProject.EntityLayer", "ApiConsume\RelockProject.EntityLayer\RelockProject.EntityLayer.csproj", "{D5623C51-3EBF-4DC0-AD06-C1D5632B3EC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.EntityLayer", "ApiConsume\RelockProject.EntityLayer\RelockProject.EntityLayer.csproj", "{D5623C51-3EBF-4DC0-AD06-C1D5632B3EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockProject.DataAccessLayer", "ApiConsume\RelockProject.DataAccessLayer\RelockProject.DataAccessLayer.csproj", "{028C82DB-EF7D-4082-97D3-39B0C96E4080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.DataAccessLayer", "ApiConsume\RelockProject.DataAccessLayer\RelockProject.DataAccessLayer.csproj", "{028C82DB-EF7D-4082-97D3-39B0C96E4080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockProject.BusinessLayer", "ApiConsume\RelockProject.BusinessLayer\RelockProject.BusinessLayer.csproj", "{59AA0009-D2B9-431C-9272-9558F88D469F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.BusinessLayer", "ApiConsume\RelockProject.BusinessLayer\RelockProject.BusinessLayer.csproj", "{59AA0009-D2B9-431C-9272-9558F88D469F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockProject.DtoLayer", "ApiConsume\RelockProject.DtoLayer\RelockProject.DtoLayer.csproj", "{01B4E4DA-18BD-4520-8A4A-A8304920B869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.DtoLayer", "ApiConsume\RelockProject.DtoLayer\RelockProject.DtoLayer.csproj", "{01B4E4DA-18BD-4520-8A4A-A8304920B869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelockProject.WebUI", "Frontend\RelockProject.WebUI\RelockProject.WebUI.csproj", "{DAEE8754-5DA7-4E34-B8E1-DFC3222C803D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.WebUI", "Frontend\RelockProject.WebUI\RelockProject.WebUI.csproj", "{DAEE8754-5DA7-4E34-B8E1-DFC3222C803D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{387DAAFC-3DA0-437D-8422-FCC8295D1AE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

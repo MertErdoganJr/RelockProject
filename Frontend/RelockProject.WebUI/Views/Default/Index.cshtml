@@ -22,11 +22,13 @@
 
         @await Component.InvokeAsync("_BuyerSellerPartial")
 
-        @await Component.InvokeAsync("_CategoryPartial")
+        @*@await Component.InvokeAsync("_CategoryPartial")*@
 
         @await Component.InvokeAsync("_TestimonialPartial")
 
         @await Component.InvokeAsync("_AgentPartial")
+
+        @await Html.PartialAsync("SubscribePartial")
 
         @await Component.InvokeAsync("_FooterPartial")
 

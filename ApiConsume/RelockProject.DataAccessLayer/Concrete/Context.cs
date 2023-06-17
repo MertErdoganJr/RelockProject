@@ -22,5 +22,6 @@ namespace RelockProject.DataAccessLayer.Concrete
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Subscribe> Subscribes { get; set; }
         public DbSet<Agent> Agents { get; set; }
+        public DbSet<AboutUsHomePage> AboutUsHomePages { get; set; }
     }
 }
