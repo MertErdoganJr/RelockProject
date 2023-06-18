@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.DtoLayer", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelockProject.WebUI", "Frontend\RelockProject.WebUI\RelockProject.WebUI.csproj", "{DAEE8754-5DA7-4E34-B8E1-DFC3222C803D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{387DAAFC-3DA0-437D-8422-FCC8295D1AE5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
