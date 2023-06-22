@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace RelockProject.DataAccessLayer.Abstract
 {
-    public interface IAboutUsHomePageDal : IGenericDal<AboutUsHomePage>
+    public interface IContactDal : IGenericDal<Contact>
     {
-
     }
 }

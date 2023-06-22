@@ -3,7 +3,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RelockProject.BusinessLayer.Abstract;
+using RelockProject.BusinessLayer.Concrete;
+using RelockProject.DataAccessLayer.Abstract;
 using RelockProject.DataAccessLayer.Concrete;
+using RelockProject.DataAccessLayer.EntityFramework;
 using RelockProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -25,6 +29,25 @@ namespace RelockProject.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Context>();
+
+            services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+            services.AddScoped<ITestimonialService, TestimonialManager>();
+
+            services.AddScoped<IContactDal, EfContactDal>();
+            services.AddScoped<IContactService, ContactManager>();
+
+            services.AddScoped<IAgentDal, EfAgentDal>();
+            services.AddScoped<IAgentService, AgentManager>();
+
+            services.AddScoped<IAboutDal, EfAboutDal>();
+            services.AddScoped<IAboutService, AboutManager>();
+
+            services.AddScoped<ISubscribeDal, EfSubscribeDal>();
+            services.AddScoped<ISubscribeService, SubscribeManager>();
+
+            services.AddScoped<IProductDal, EfProductDal>();
+            services.AddScoped<IProductService, ProductManager>();
+
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
             services.AddHttpClient();
             services.AddControllersWithViews();

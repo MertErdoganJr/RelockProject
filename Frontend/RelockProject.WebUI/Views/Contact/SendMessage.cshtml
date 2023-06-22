@@ -1,0 +1,43 @@
+﻿@model CreateContactDto
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        @*<div class="theme_heading">
+        <h2>Subscribe Our</h2>
+        </div>
+        <div class="theme_description">
+        <p class="mt-15">Newsletter</p>
+        </div>*@
+        <br />
+        <br />
+        <div class="col-12">
+            <form method="post" class="newsletter_form" asp-action="SendMessage" asp-controller="Contact">
+                <div class="form_container">
+                    <input name="Name" type="text" placeholder="Name Surname" required>
+                </div>
+                <br />
+                <div class="form_container">
+                    <input name="Mail" type="email" placeholder="Write Your Email" required>
+                </div>
+                <br />
+                <div class="form_container">
+                    <input name="Subject" type="text" placeholder="Subject" required>
+                </div>
+                <br />
+                <div class="form_container">
+                    <input name="Message" type="text" placeholder="Message.." required>
+                </div>
+                <br />
+                @*<div class="form_container">
+                    <button class="estimate_learn_button btn" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i><p class="mt-15">Send Message</p>
+                    </button>
+                </div>*@
+                <div class="buyer_seller_button">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

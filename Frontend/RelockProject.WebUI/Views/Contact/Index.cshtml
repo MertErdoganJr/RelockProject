@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+
+    <div id="wrap">
+
+        @await Component.InvokeAsync("_NavbarPartial")
+
+        @await Component.InvokeAsync("_ContactPartial")
+
+        @await Html.PartialAsync("/Views/Contact/SendMessage.cshtml")
+
+        @await Component.InvokeAsync("_FooterPartial")
+
+    </div>
+
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>

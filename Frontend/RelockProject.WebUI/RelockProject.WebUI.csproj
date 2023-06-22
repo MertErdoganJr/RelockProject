@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ApiConsume\RelockProject.BusinessLayer\RelockProject.BusinessLayer.csproj" />
     <ProjectReference Include="..\..\ApiConsume\RelockProject.DataAccessLayer\RelockProject.DataAccessLayer.csproj" />
     <ProjectReference Include="..\..\ApiConsume\RelockProject.EntityLayer\RelockProject.EntityLayer.csproj" />
   </ItemGroup>
